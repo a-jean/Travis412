@@ -24,4 +24,11 @@ public class SimpleCalculatorTest {
         SimpleCalculator calc = new SimpleCalculator();
         assertEquals(calc.multiply(5, 4), 20);
     }
+
+
+    @Test
+    public void testDivideByZero() {
+        SimpleCalculator calc = new SimpleCalculator();
+        assertEquals(calc.dividebyzero(7, 0), "You cannot divide by zero!");
+    }
 }
